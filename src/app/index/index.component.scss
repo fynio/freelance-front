@@ -1,0 +1,271 @@
+$c_azul_rodrigo: rgb(33, 23, 73);
+$c_rosa_rodrigo: rgb(221, 51, 186);
+$c_morado_claro: rgb(91, 28, 158);
+$c_azul_rodrigo_obscuro: rgb(17, 12, 37);
+
+
+.video {
+  width: 100vw;
+  height: 90vh;
+  overflow: hidden;
+
+  &>.Contenedor {
+    width: 100vw;
+    height: 90vh;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    &>.Contenido {
+      width: 1200px;
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: column;
+      align-items: flex-start;
+
+      &>.Titulo {
+        width: 500px;
+        font-family: Fuente-Bold;
+        font-size: 45px;
+        color: white;
+      }
+
+      &>.Subtitulo {
+        padding-top: 20px;
+        width: 500px;
+        font-size: 20px;
+        color: white;
+        font-family: Fuente-Regular;
+      }
+
+      &>.botones {
+        padding-top: 30px;
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: row;
+
+
+
+        &>.btn_pink {
+          background: linear-gradient(180deg, #f20091 0, #d90082);
+          border: 1px solid #d90082;
+
+          color: white;
+          padding: 20px;
+          margin-right: 20px;
+          font-size: 18px;
+        }
+
+        &>.btn_blanco {
+          background: linear-gradient(180deg, transparent 0, hsla(0, 0%, 100%, .2));
+          border: 1px solid white;
+          color: white;
+          padding: 20px;
+          margin-right: 20px;
+          font-size: 18px;
+        }
+      }
+    }
+
+  }
+
+  &>video {
+    width: 100%;
+  }
+}
+
+
+
+.ContenedorBlanco {
+  width: 100vw;
+  min-height: 80vh;
+
+  &>.Titulo {
+    padding-top: 60px;
+    font-size: 44px;
+    text-align: center;
+    font-family: Fuente-Semibold;
+  }
+
+  &>.ContenedorIconos {
+    width: 1200px;
+    margin: auto;
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    &>.ItemIcono {
+      width: 90%;
+      max-width: 400px;
+      margin: 5%;
+      overflow: hidden;
+
+      &>.icono {
+        width: 90%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+
+        &>img {
+          width: 90px;
+          margin: auto;
+          padding: 30px;
+        }
+      }
+
+      &>.titulo {
+        text-align: center;
+        font-family: Fuente-SemiBold;
+        font-size: 24px;
+        padding-bottom: 20px;
+      }
+
+      &>.texto {
+        font-size: 18px;
+        text-align: center;
+      }
+
+    }
+  }
+}
+
+.ContenedorMorado {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: $c_azul_rodrigo_obscuro;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding-bottom: 100px;
+  padding-top: 100px;
+
+  &>.Titulo {
+    align-self: center;
+    font-size: 44px;
+    text-align: center;
+    font-family: Fuente-Semibold;
+    color: white;
+    z-index: 20;
+  }
+
+  &>.shape_dwo {
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+
+    animation: lefttoright2 20s infinite;
+
+    &>img {
+      margin-top: 500px;
+      width: 500px;
+      height: 500px;
+    }
+  }
+
+
+  &>.shape_uno {
+    position: absolute;
+
+    animation: lefttoright 20s infinite;
+
+    &>img {
+      width: 500px;
+      height: 500px;
+    }
+  }
+
+  @keyframes lefttoright {
+    0% {
+      margin-left: 0px;
+
+    }
+
+    50% {
+      margin-left: 200px;
+    }
+
+    100% {
+      margin-left: 0px;
+    }
+  }
+
+
+  @keyframes lefttoright2 {
+    0% {
+      margin-left: 0vw;
+
+    }
+
+    50% {
+      margin-left: -200px;
+    }
+
+    100% {
+      margin-left: 0vw;
+    }
+  }
+
+
+
+
+  &>.ContenedorDividido {
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 100px;
+
+    &>.izq,
+    &>.der {
+      padding-top: 100px;
+      width: 100%;
+      height: 200px;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      z-index: 20;
+
+      &>.imagen1 {
+
+
+        &>img {
+          width: 200px;
+          height: 200px;
+
+        }
+      }
+
+
+      &>.titulo {
+        font-size: 24px;
+        color: $c_rosa_rodrigo;
+        font-family: Fuente-Bold;
+
+      }
+
+      &>.texto {
+        padding-top: 40px;
+        font-size: 24px;
+        color: white;
+      }
+
+
+    }
+  }
+
+
+}

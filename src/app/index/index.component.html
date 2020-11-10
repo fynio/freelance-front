@@ -1,1 +1,108 @@
-<p>index works!</p>
+<div>
+  <div class="video">
+
+    <div class="Contenedor">
+      <div class="Contenido">
+        <div class="Titulo">
+          Contrata en línea a los mejores freelancers para cualquier trabajo.
+        </div>
+        <div class="Subtitulo">
+          Millones de personas recurren a Freelancer.com para convertir sus ideas en realidad.
+        </div>
+
+        <div class="botones">
+          <div class="btn_pink">
+            Contrata a un freelancer
+          </div>
+
+          <div class="btn_blanco">
+            Gana dinero haciendo trabajo freelance
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+    <video src="./assets/videos/index.mp4" loop autoplay></video>
+  </div>
+</div>
+
+<div class="ContenedorBlanco">
+  <h2 class="Titulo">
+    ¿Necesitas encargar un trabajo?
+  </h2>
+
+  <div class="ContenedorIconos">
+    <div class="ItemIcono" *ngFor="let item of this.datos.datos">
+      <div class="icono">
+        <img src="{{item.icono}}" alt="">
+      </div>
+      <div class="titulo">{{item.titulo}}</div>
+      <div class="texto">Es fácil. Simplemente publica un trabajo que necesitas realizar y recibe ofertas competitivas
+        de freelancers en cuestión
+        de minutos.</div>
+    </div>
+
+  </div>
+</div>
+
+<div class="ContenedorMorado">
+  <h2 class="Titulo">
+    ¿Qué puedes hacer en nuestra plataforma?
+  </h2>
+
+  <div class="shape_uno">
+    <img src="./assets/image/shape_circle.svg" alt="">
+  </div>
+
+
+  <div class="shape_dwo">
+    <img src="./assets/image/shape_rect.svg" alt="">
+  </div>
+
+
+
+
+
+  <div class="ContenedorDividido">
+    <div class="izq">
+      <div class="imagen1">
+        <img src="./assets/image/buscar_azul.svg" alt="">
+      </div>
+    </div>
+    <div class="der">
+      <div class="titulo">Explorar portafolios</div>
+      <div class="texto">Encuentra profesionales en los que puedas confiar al explorar sus muestras de trabajos
+        anteriores y leer los comentarios
+        de sus perfiles.</div>
+    </div>
+
+    <div class="izq">
+      <div class="titulo">Ver ofertas</div>
+      <div class="texto">Recibe ofertas gratuitas por parte de nuestros talentosos freelancers en cuestión de segundos.
+      </div>
+
+
+    </div>
+    <div class="der">
+      <div class="imagen1">
+        <img src="./assets/image/subasta.svg" alt="">
+      </div>
+    </div>
+
+
+
+    <div class="izq">
+      <div class="imagen1">
+        <img src="./assets/image/escudo.svg" alt="">
+      </div>
+    </div>
+    <div class="der">
+      <div class="titulo">Paga por calidad</div>
+      <div class="texto">Paga por el trabajo cuando esté terminado y estés 100% satisfecho.</div>
+    </div>
+
+
+
+  </div>
+</div>
